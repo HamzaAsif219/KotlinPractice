@@ -31,17 +31,13 @@
 
 
 }*/
+
 /*fun main(){
     // TODO: reverse integer
-    var intnum=123456
-     var reverse=0
-     while (intnum!=0){
-         var temp=intnum%10
-         reverse=reverse*10 +temp
-         intnum=intnum/10
-
-     }
-     println("$reverse")
+    var intnum=12344
+    var result =intnum.toString()
+    var reverse=result.reversed()
+    println(reverse)
 }*/
 
  /*fun main(){
