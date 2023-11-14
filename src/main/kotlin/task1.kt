@@ -43,12 +43,12 @@
  /*fun main(){
 
      // TODO: Prime number
-     for (i in 2..30){
+     for (i in 1..30){
          var a=true
-         if (i==1){
-             println("Please start range from : 2")
-             break
-         }
+//         if (i==1){
+//             println("Please start range from : 2")
+//             break
+//         }
          for (j in 2 until i){
              if(i%j==0){
                  a=false
@@ -115,8 +115,77 @@
     println("Subtract of sets: $result")
 }*/
 
-/*
+
 // TODO: Menu of given task using when
+/*
+fun fibbonacci(){
+    // TODO: fibonacci series
+    var num1=0
+    var num2=1
+    var lmt=5
+
+    for (i in num1..lmt){
+        var num=num1+num2
+        num1=num2
+        num2=num
+        println("$num1")
+
+    }
+
+}
+fun fictorial(){
+    // TODO: fectorial
+    var a=1
+
+    for (i in 5 downTo 1){
+        a=a*i
+
+    }
+    println(a)
+}
+fun revrsestr(){
+    // TODO: reverse string
+    var str="abcd"
+    var result=str.reversed()
+    println(result)
+
+
+}
+fun primenmbr(){
+
+    // TODO: Prime number
+    for (i in 1..30){
+        var a=true
+//         if (i==1){
+//             println("Please start range from : 2")
+//             break
+//         }
+        for (j in 2 until i){
+            if(i%j==0){
+                a=false
+            }
+
+        }
+        if (a){
+            println("prime number is :$i")
+        }
+    }
+}
+fun palstr()  {
+    // TODO: palindrome string using reversed()
+    var str="W o w o w"
+    var strInLowerCase=str.toLowerCase()
+    var result=strInLowerCase.replace("\\s".toRegex(),"")
+    var results=result.reversed()
+
+    if (results==result){
+        // println("this is result: $result ")
+        println("this is palindrome: $str")
+    }else{
+        // println("this is result : $result")
+        println("Given string is not palindrome : $str")
+    }
+}
 fun palint()
     {
         // TODO: palindrome Integer using reversed()
@@ -166,9 +235,27 @@ fun main(){
     println("---> Please select number<---")
     var input= readLine()?.toInt()
     when(input){
+        1->{
+            println("fibonacci series of given number: ${fibbonacci()}")
+
+        }
+        2->{
+            println("Fictorial of number")
+            fictorial()
+        }
         3-> {
             println("Palandrome of integer")
             palint()
+            println("Palandrome of string")
+            palstr()
+        }
+        4->{
+            println("Prime Number")
+            primenmbr()
+        }
+        5->{
+            println("Reverse of string")
+            revrsestr()
         }
         6-> {
             println("Union sets")
@@ -178,8 +265,8 @@ fun main(){
             println("Subtract of set")
             subtractSet()}
     }
-}
 }*/
+
 /*fun main(){
     // TODO: remove spaces
     var str="w  e e t    yi"

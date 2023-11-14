@@ -43,18 +43,22 @@
     for ((key , value ) in num)
         println("$key = $value")
 }*/
+
 /*fun main(){
     // TODO: mutableMapOf
-    var num= mutableMapOf<Int,String>()
-    num.put(1,"hello")
-    num.put(2,"hi")
-    num.put(3,"bye")
-    println(num.get(1))
+    var num= mutableMapOf<Any,Any>()
+    num[2] = 2
+    num[2] = "hello"
+    num["3"] = "bye"
+    num["you"]="great"
+    num["my"]=4
+    println(num[2])
     num[5]="How"
     println(num)
     for((key, value) in num)
         println("$key = $value")
 }*/
+
 /*fun main(){
     // TODO: arrayOf
     var ary= arrayOf("1","2","34","5")
