@@ -1,7 +1,7 @@
 fun main(){
 
-    val carolla=Car("CarollaX", "Petrol", 30)
-    val honda=Car("city","Petrol", 25)
+    val carolla=Car("CarollaX",4, "Petrol", 30)
+    val honda=Car("city",4,"Petrol", 25)
     carolla.InnerNestedclass().printname()
  val nested=Car.nestedClass()// we can also use for direct // val nested=Car.nestedClass().printname()
 val prsn1=Person("h",25)
@@ -20,7 +20,7 @@ val prsn1=Person("h",25)
 
 
     println("Person Class ")
-    println(prsn1)
+    println("$prsn1")
     println("Age"+prsn1.age1)
     println("Name :"+prsn1.name1)
 }
@@ -33,6 +33,7 @@ class Car(val name:Any,val tyers:Int , val type:Any, val Km:Int)//properties
     }
     constructor(name: String, type: Any, Km: Int):this(name,5,type,Km)
    private val name1:String="Call me"
+
     private val name2:String="Private member"
     val name3:String="Public member"
 
@@ -49,8 +50,8 @@ class Car(val name:Any,val tyers:Int , val type:Any, val Km:Int)//properties
         }
 
     }
-   inner class InnerNestedclass{ // TODO: Inner Nested Class
-      // private val b:String="Hello inner private variable"
+  inner class InnerNestedclass{ // TODO: Inner Nested Class
+       private val b:String="Hello inner private variable"
        fun printname():String{
            val a:String="hello innerNested class body"
            println(a)

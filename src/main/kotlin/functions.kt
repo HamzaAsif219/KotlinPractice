@@ -66,7 +66,7 @@ fun main(){
 
 
     // TODO: Lamda function
-    var lamba={a:Int,b:Int->a+b}
+    var lamba={a:Int,b:Int-> a+b}
     println(" Lamda : "+lamba(2,4))
     println("lamda is "+lamba(3,5))
 
