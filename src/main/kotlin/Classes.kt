@@ -30,6 +30,7 @@ class Car(val name:Any,val tyers:Int , val type:Any, val Km:Int)//properties
     init {
         println("$name is created")
         println("typer is : $type ")
+
     }
     constructor(name: String, type: Any, Km: Int):this(name,5,type,Km)
    private val name1:String="Call me"
@@ -37,17 +38,20 @@ class Car(val name:Any,val tyers:Int , val type:Any, val Km:Int)//properties
     private val name2:String="Private member"
     val name3:String="Public member"
 
+
     fun driveCar(){
         println(" $name Car is driving")
     }
     fun brakeApply(){
         println("$name Applied brake")
     }
+
     class nestedClass{ // TODO: Nested Class/ Child Class
         fun printname():String{
             return "Hello Nested class"
 
         }
+
 
     }
   inner class InnerNestedclass{ // TODO: Inner Nested Class
