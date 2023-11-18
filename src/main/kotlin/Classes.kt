@@ -54,15 +54,18 @@ class Car(val name:Any,val tyers:Int , val type:Any, val Km:Int)//properties
 
 
     }
-  inner class InnerNestedclass{ // TODO: Inner Nested Class
+   inner class InnerNestedclass{ // TODO: Inner Nested Class
        private val b:String="Hello inner private variable"
-       fun printname():String{
+
+      fun printname():String{
            val a:String="hello innerNested class body"
            println(a)
            return name2
        }
 
+
     }
+
 }
 class Person(name:String, age:Int){
     var name1=name

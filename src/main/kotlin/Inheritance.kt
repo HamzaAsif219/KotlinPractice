@@ -21,7 +21,7 @@ open  class Student{
 
 open class Phone{
     // TODO: herarical Inheritance classes
-    
+
   val name:String="Nokia"
   val type:String="Android"
   val volume:Int=10
@@ -51,6 +51,7 @@ class BasicPhone : Phone() {
     }
 }
 fun main(){
+
 
 /*
     // TODO: Herarical Inheritance

@@ -1,20 +1,20 @@
 open class Teacher {
     open fun teach() {
-        println("teaching")
+        println("PARENT teaching")
     }
     fun school(){
-        println("School")
+        println("TEACHER CLASS PARENT School")
     }
 }
-    class MathTeacher:Teacher(){
+     class MathTeacher:Teacher(){
         override fun teach() {
-            println("Teaching Math")
+            println("MATHTEACHER CHILD CLASS Teaching Math")
         }
 
 }
 class Department:Teacher(){
     override fun teach() {
-        println("Math's Department ")
+        println("DEPARTMENT CHILD CLASS Math's Department ")
     }
 
 }
@@ -24,5 +24,6 @@ fun main(){
     teacher.teach()
     mathteacher.teach()
     mathteacher.school()
+    teacher.teach()
 
 }
