@@ -14,6 +14,9 @@ class B1:A1(){
 }
 
 abstract  class abstract{
+    abstract fun hye()
+    abstract  fun bye()
+
 
     fun hello11(){
         println("Hello abstract class with no abstract method or property")
@@ -24,6 +27,14 @@ class abstract2:abstract(){
     fun hello21(){
         hello11()
         println("Hello non abstract class with hello 21")
+    }
+
+    override fun bye() {
+        println("Bye")
+    }
+
+    override fun hye() {
+        println("Hye")
     }
 }
 fun  main(){
