@@ -10,9 +10,7 @@ interface SueprClass2{
 // fun printName(){
 //    println("override from Superclass2")
 //}
-    fun yourCountry(){ //concrete method not restrict to call in child class
-        println("Pakistan")
-    }
+   fun yourCountry()
     fun yourCity(){
         println("Daska")
     }
@@ -29,7 +27,7 @@ class ChildClass:SuperClass,SueprClass2{
     }
 
     override fun yourCountry() {
-        super.yourCountry()
+        super.yourCity()
         println("Hi, Child Class ")
     }
 
