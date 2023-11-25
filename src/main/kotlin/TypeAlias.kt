@@ -10,7 +10,6 @@ fun UserDetails():User{
 fun User1():User{
     return User("Hamza","Asif",25)
 }
-
 fun main(){
 
     println(fetchUser())
