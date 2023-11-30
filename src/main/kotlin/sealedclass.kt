@@ -1,14 +1,15 @@
 
-/*
+
 fun main(){
-    var tile:Tile=Red("Mashroom", 25)
+    var tile=Red("Mashroom", 25)
     var tile1=Red("fire",30)
-     // println("${tile.type} and ${tile.points}")
-    var points:Int=when(tile){
-        is Blue ->tile.points*4
-        is Red -> tile.points*2
-    }
-    println(points)
+      println("${tile.type} and ${tile.points}")
+    // println(tile)
+//    var points:Int=when(tile){
+//        is Blue ->tile.points*4
+//        is Red -> tile.points*2
+//    }
+//    println(points)
 
 
 
@@ -18,7 +19,10 @@ sealed class Tile
     class Blue(val points: Int):Tile()
 
 
- */
+
+
+
+/*
 fun main(){
 var f1=Father.Child2()
 
@@ -56,3 +60,7 @@ fun family(member:Father){
         is Father.Child2-> println("Child 2")
     }
 }
+
+
+
+ */
