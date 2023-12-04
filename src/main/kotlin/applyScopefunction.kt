@@ -21,7 +21,7 @@ fun main() {
 }
 
  */
-/*
+
 // TODO: scope function using apply
 data class Car1(var make: String, var model: String, var year: Int)
 
@@ -32,14 +32,14 @@ fun main() {
         make = "Honda"
         model = "Accord"
         year = 2022
-        //println("Configured car $this")
+        println("Configured car $this")
     }
 
     println("Original car: $car")
     println("Configured car: $configuredCar")
 }
 
- */
+
 
 
 /*

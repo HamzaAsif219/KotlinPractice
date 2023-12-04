@@ -46,7 +46,9 @@ fun main() {
     println(point) // Output: Point(x=5, y=8)
 }
 */
-fun main() {
+
+
+/*fun main() {
     val person = run {
         // Code to be executed in the context of 'run'
         val name = "Alice"
@@ -55,4 +57,14 @@ fun main() {
     }
 
     println(person) // Output: Name: Alice, Age: 30
+}
+
+ */
+fun main(){
+    var numbers= mutableListOf(1,2,3,4,5,6,7)
+    numbers.run {
+        removeAll{it%2==0}
+        this
+    }
+    println(numbers)
 }
