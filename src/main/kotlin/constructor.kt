@@ -18,5 +18,6 @@ class Automobile(name:String,val tyre:Int, val maxSeats:Int,val engineType:Strin
 fun main(){
     val automobile = Automobile("honda","petrol","Ali")
     println(automobile.maxSeats)
-
+    val sutomobile2=Automobile("ahmed","Hamza")
+    println(sutomobile2.engineType)
 }
